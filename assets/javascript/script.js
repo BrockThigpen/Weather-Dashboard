@@ -13,7 +13,7 @@ $('#search').submit(function(e){
         console.log(response);
         let iconUrl = "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png";
         let icon = $('<img>').attr('src', iconUrl);
-        let card = $('<div>').addClass('card mt-3');
+        let card = $('<div>').addClass('card mt-3 mx-3');
         let body = $("<div>").addClass('card-body');
         let head = $("<h5>").addClass('card-title').text(response.name + ' (' + date + ')').append(icon);
         let temp = $("<p>").addClass('card-text').text('Temperature: ' + Math.round(response.main.temp) + '°F');

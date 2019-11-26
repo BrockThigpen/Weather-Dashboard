@@ -1,6 +1,17 @@
 *{
     box-sizing: border-box;
 }
+html, body{
+    height: 100vh;
+}
+.row{
+    min-height: 100%;
+    height: auto!important;
+    margin: 0;
+}
+#displayContainer{
+    padding: 0;
+}
 #navH{
     color: white;
     margin: auto;
@@ -10,8 +21,9 @@ label{
     font-size: 20px;
 }
 #searchContainer{
-    background-color: rgb(250, 250, 250);
-    
+    color: white;
+    background-color: rgb(129, 129, 129);
+    min-height: 100%;
 }
 #userInput{
     padding: 3px;
